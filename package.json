@@ -1,0 +1,12 @@
+{
+  "name": "aiman-khan-official",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal brand website for the Aiman & Minal YouTube channel (@aimankhanofficial05)",
+  "scripts": {
+    "start": "npx serve . -l 8899",
+    "seed": "node scripts/seed.mjs",
+    "verify": "node scripts/verify.cjs"
+  }
+}

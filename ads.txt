@@ -1,0 +1,28 @@
+# ads.txt — IAB Tech Lab v1.1
+# Yeh file website ke ROOT par honi chahiye (domain.com/ads.txt), taake
+# AdSense ise verify kar sake aur Ezoic bhi yahan apni line add kar sake.
+#
+# HOW TO COMPLETE (apply karne ke baad, 1 minute ka kaam):
+#   1. https://adense.google.com kholein (sign in ke saath).
+#   2. Apna AdSense publisher ID yahan se dekhein — Account > Settings > Account
+#      information. Ye "pub-XXXXXXXXXXXXXXXX" format mein hota hai.
+#   3. Neeche wali line ka "PLACEHOLDER" ko us ID se replace kar dein, aur
+#      is poori file ko hosting par upload kar dein.
+#
+# NOTE: AdSense approval ke liye ye file OPTIONAL hai, lekin publish karne se
+# pehle daal dena behtar hai — kuch ad networks is file ke bina serve hi
+# nahi karte. Approval milne se PEHLE apna ID mat likhein.
+#
+# Ezoic ke liye: approval ke baad Ezoic aapko apni line dega, usay neeche
+# ek nayi line ki tarah add kar dein. Har vendor ki alag line hoti hai.
+
+# ---- GOOGLE ADSENSE (apne publisher ID se replace karein) ----
+# NOTE: "DIRECT, f08c47fec0942fa0" sirf TABHI sahi hai jab ye aapki apni
+# AdSense line ho. Agar nahi, to Google ka apna standard line use karein:
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# Apni ID yahan paste karne ke baad hosting ke ROOT par upload karein
+# (https://aapka-domain.com/ads.txt) aur AdSense me "Done" dabayein.
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# ---- EZOIC (approval ke baad unka diya hua line yahan add karein) ----
+# media.net, VERIFIED, [EZOIIC-MEDIA-NET-LINE]

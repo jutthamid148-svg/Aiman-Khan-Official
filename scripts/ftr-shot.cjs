@@ -1,0 +1,23 @@
+const { chromium } = require("playwright");
+(async () => {
+  const b = await chromium.launch();
+  const p = await b.newPage({ viewport: { width: 1440, height: 1000 } });
+  const errs = [];
+  p.on("pageerror", (e) => errs.push("PAGEERROR: " + e.message));
+  p.on("console", (m) => m.type() === "error" && errs.push("CONSOLE: " + m.text()));
+  await p.goto("http://localhost:8899/aiman-khan-official.html", { waitUntil: "domcontentloaded" });
+  await p.addStyleTag({ content: "html{scroll-behavior:auto!important}" });
+  await p.waitForTimeout(1800);
+  await p.evaluate(() => document.querySelector("#contact").scrollIntoView());
+  await p.waitForTimeout(1200);
+  await p.screenshot({ path: "shots/s-ftr.png" });
+  const meta = await p.evaluate(() => [...document.querySelectorAll(".fmeta .v")].map((e) => e.textContent));
+  await p.setViewportSize({ width: 390, height: 844 });
+  await p.waitForTimeout(600);
+  await p.evaluate(() => document.querySelector("#contact").scrollIntoView());
+  await p.waitForTimeout(1000);
+  await p.screenshot({ path: "shots/s-ftr-m.png" });
+  const oflow = await p.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+  console.log(JSON.stringify({ meta, oflow, errs }, null, 2));
+  await b.close();
+})();
