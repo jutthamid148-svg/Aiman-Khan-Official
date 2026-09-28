@@ -4,6 +4,15 @@ A modern personal-brand landing page for Aiman Khan Official featuring a dark lu
 
 ![Aiman Khan Official Preview](./update-preview.png)
 
+## Website Screenshots
+
+<div align="center">
+  <img src="./shots/s-home.png" alt="Homepage" width="420" />
+  <img src="./shots/s-gallery.png" alt="Gallery section" width="420" />
+  <img src="./shots/s-mobile.png" alt="Mobile view" width="260" />
+  <img src="./shots/s-terms.png" alt="Terms page" width="420" />
+</div>
+
 ## Overview
 
 This project is a static website designed for a digital creator and lifestyle brand. It includes:
