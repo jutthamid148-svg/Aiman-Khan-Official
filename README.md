@@ -6,12 +6,30 @@ A modern personal-brand landing page for Aiman Khan Official featuring a dark lu
 
 ## Website Screenshots
 
-<div align="center">
-  <img src="./shots/s-home.png" alt="Homepage" width="420" />
-  <img src="./shots/s-gallery.png" alt="Gallery section" width="420" />
-  <img src="./shots/s-mobile.png" alt="Mobile view" width="260" />
-  <img src="./shots/s-terms.png" alt="Terms page" width="420" />
-</div>
+Below are some of the key visuals from the project:
+
+### Home
+
+| | |
+|---|---|
+| ![Homepage](./shots/s-home.png) | ![Hero section](./shots/s-hero.png) |
+| ![Gallery section](./shots/s-gallery.png) | ![About section](./shots/s-about.png) |
+| ![Videos section](./shots/s-videos.png) | ![Shorts section](./shots/s-shorts.png) |
+| ![Playlists section](./shots/s-playlists.png) | ![Pulse section](./shots/s-pulse.png) |
+| ![Slider](./shots/s-slider.png) | ![Lightbox](./shots/s-lightbox.png) |
+
+### Pages & States
+
+![Video modal](./shots/s-modal.png)
+![Follow section](./shots/follow.png)
+![Privacy page](./shots/s-privacy.png)
+![Terms page](./shots/s-terms.png)
+
+### Responsive
+
+| | |
+|---|---|
+| ![Mobile view](./shots/s-mobile.png) | ![Mobile menu](./shots/05-mobile-menu.png) |
 
 ## Overview
 

@@ -514,28 +514,6 @@ svg { width: 1em; height: 1em; }
   background: linear-gradient(180deg, transparent 45%, rgba(7, 8, 12, 0.85) 100%);
 }
 
-.portrait-tag {
-  position: absolute; z-index: 3;
-  padding: 0.6rem 0.95rem; border-radius: var(--r-sm);
-  background: rgba(12, 14, 20, 0.82);
-  backdrop-filter: blur(14px);
-  border: 1px solid var(--border-strong);
-  font-family: var(--font-head); font-size: 0.75rem; font-weight: 600;
-  line-height: 1.35; text-align: center;
-  box-shadow: var(--shadow-sm);
-}
-.portrait-tag i { font-style: italic; color: var(--accent); }
-.portrait-tag b { color: var(--accent); }
-.portrait-tag small { font-size: 0.6rem; color: var(--text-dim); letter-spacing: 0.1em; }
-.portrait-tag--top { top: 8%; left: -14%; animation: floatTag 5s ease-in-out infinite 0.5s; }
-.portrait-tag--bottom { bottom: 12%; right: -12%; animation: floatTag 6s ease-in-out infinite; }
-@keyframes floatTag {
-  0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
-  50% { transform: translateY(-10px) rotate(var(--r, 0deg)); }
-}
-.portrait-tag--top { --r: -7deg; }
-.portrait-tag--bottom { --r: 5deg; }
-
 .hero-orbit { position: absolute; inset: 0; pointer-events: none; }
 .hero-orbit span, .hero-orbit b, .hero-orbit i {
   position: absolute; border-radius: 50%; display: block;
